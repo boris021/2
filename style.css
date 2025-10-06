@@ -746,7 +746,7 @@ main {
         /* Header */
         .games-header {
             display: flex;
-            align-items: center;
+            align-items: center;url(http://127.0.0.1:5500/index.html)
             gap: 15px;
             margin-bottom: 30px;
         }
