@@ -6,45 +6,58 @@
     <title>RIOBET - Онлайн Казино</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-
-
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="header-top">
-            <div class="header-left">
-                <button class="menu-btn" id="menuBtn">☰</button>
-            
+            <button class="menu-btn" id="menuBtn">☰</button>
             <a href="#" class="logo">
                 <img src="img/riobet-logo.png" alt="logo">
             </a>
-            </div>
-            <div class="header-right"></div>
-            
-
             <div class="header-actions">
                 <a href="#" class="btn btn-login">Вход</a>
                 <a href="#" class="btn btn-register">Регистрация</a>
-            </div>
+            </div>               
         </div>
 
-        <nav class="nav-tabs">
-            <a href="#">Спорт</a>
-            <a href="#">Слоты</a>
-            <a href="#">Календарь</a>
-            <a href="#">Live casino</a>
-            <a href="#">Турниры</a>
-            <a href="#">Бонусы</a>
-            <a href="#">Лояльность</a>
-            <a href="#">Зал славы</a>
+        <nav class="header-top header-top-icons">
+            <a href="#" class="head-item">
+                <svg class="head-ico" width="24" height="24"><use href="#i-sport"/></svg>
+                <span>Спорт</span>
+            </a>
+            <a href="#" class="head-item">
+                <svg class="head-ico" width="24" height="24"><use href="#i-slots"/></svg>
+                <span>Слоты</span>
+            </a>
+            <a href="#" class="head-item">
+                <svg class="head-ico" width="24" height="24"><use href="#i-calendar"/></svg>
+                <span>Календарь</span>
+            </a>
+            <a href="#" class="head-item">
+                <svg class="head-ico" width="24" height="24"><use href="#i-live"/></svg>
+                <span>Live casino</span>
+            </a>
+            <a href="#" class="head-item">
+                <svg class="head-ico" width="24" height="24"><use href="#i-tournament"/></svg>
+                <span>Турниры</span>
+            </a>
+            <a href="#" class="head-item">
+                <svg class="head-ico" width="24" height="24"><use href="#i-bonus"/></svg>
+                <span>Бонусы</span>
+            </a>
+            <a href="#" class="head-item">
+                <svg class="head-ico" width="24" height="24"><use href="#i-loyalty"/></svg>
+                <span>Лояльность</span>
+            </a>
+            <a href="#" class="head-item">
+                <svg class="head-ico" width="24" height="24"><use href="#i-hall"/></svg>
+                <span>Зал славы</span>
+            </a>
         </nav>
     </header>
 
-    <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
         <button class="sidebar-close" id="sidebarClose">✕</button>
         
@@ -52,251 +65,641 @@
             <button class="support-btn">💬 Поддержка</button>
         </div>
 
-<ul class="sidebar-menu">
-  <li>
-    <a class="nav-item" href="#">
-      <span class="nav-icon"><svg width="24" height="24"><use href="#i-home"/></svg></span>
-      <span>Главная</span>
-    </a>
-  </li>
+        <ul class="sidebar-menu">
+            <li>
+                <a class="nav-item" href="#">
+                    <span class="nav-icon"><svg width="24" height="24"><use href="#i-home"/></svg></span>
+                    <span>Главная</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-item" href="#">
+                    <span class="nav-icon"><svg width="24" height="24"><use href="#i-ball"/></svg></span>
+                    <span>Спорт</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-item" href="#">
+                    <span class="nav-icon"><svg width="24" height="24"><use href="#i-crown"/></svg></span>
+                    <span>Слоты</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-item" href="#">
+                    <span class="nav-icon"><svg width="24" height="24"><use href="#i-calendar"/></svg></span>
+                    <span>Календарь</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-item" href="#">
+                    <span class="nav-icon"><svg width="24" height="24"><use href="#i-star"/></svg></span>
+                    <span>Live casino</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-item" href="#">
+                    <span class="nav-icon"><svg width="24" height="24"><use href="#i-trophy"/></svg></span>
+                    <span>Турниры</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-item" href="#">
+                    <span class="nav-icon"><svg width="24" height="24"><use href="#i-gift"/></svg></span>
+                    <span>Бонусы</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-item" href="#">
+                    <span class="nav-icon"><svg width="24" height="24"><use href="#i-swords"/></svg></span>
+                    <span>Квесты</span>
 
-  <li>
-    <a class="nav-item" href="#">
-      <span class="nav-icon"><svg width="24" height="24"><use href="#i-ball"/></svg></span>
-      <span>Спорт</span>
-    </a>
-  </li>
-
-  <li>
-    <a class="nav-item" href="#">
-      <span class="nav-icon"><svg width="24" height="24"><use href="#i-crown"/></svg></span>
-      <span>Слоты</span>
-    </a>
-  </li>
-
-  <li>
-    <a class="nav-item" href="#">
-      <span class="nav-icon"><svg width="24" height="24"><use href="#i-calendar"/></svg></span>
-      <span>Календарь</span>
-    </a>
-  </li>
-
-  <li>
-    <a class="nav-item" href="#">
-      <span class="nav-icon"><svg width="24" height="24"><use href="#i-star"/></svg></span>
-      <span>Live casino</span>
-    </a>
-  </li>
-
-  <li>
-    <a class="nav-item" href="#">
-      <span class="nav-icon"><svg width="24" height="24"><use href="#i-trophy"/></svg></span>
-      <span>Турниры</span>
-    </a>
-  </li>
-
-  <li>
-    <a class="nav-item" href="#">
-      <span class="nav-icon"><svg width="24" height="24"><use href="#i-gift"/></svg></span>
-      <span>Бонусы</span>
-    </a>
-  </li>
-
-  <li>
-    <a class="nav-item" href="#">
-      <span class="nav-icon"><svg width="24" height="24"><use href="#i-swords"/></svg></span>
-      <span>Квесты</span>
-    </a>
-  </li>
-
-  <li>
-    <a class="nav-item" href="#">
-      <span class="nav-icon"><svg width="24" height="24"><use href="#i-badge-dollar"/></svg></span>
-      <span>Лояльность</span>
-    </a>
-  </li>
-
-  <li>
-    <a class="nav-item" href="#">
-      <span class="nav-icon"><svg width="24" height="24"><use href="#i-star"/></svg></span>
-      <span>Зал славы</span>
-    </a>
-  </li>
-
-  <li>
-    <a class="nav-item" href="#">
-      <span class="nav-icon"><svg width="24" height="24"><use href="#i-doc"/></svg></span>
-      <span>Новости</span>
-    </a>
-  </li>
-
-  <li>
-    <a class="nav-item" href="#">
-      <span class="nav-icon"><svg width="24" height="24"><use href="#i-idea"/></svg></span>
-      <span>Вопросы и ответы</span>
-    </a>
-  </li>
-</ul>
-
+            <li>
+                <a class="nav-item" href="#">
+                    <span class="nav-icon"><svg width="24" height="24"><use href="#i-badge-dollar"/></svg></span>
+                    <span>Лояльность</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-item" href="#">
+                    <span class="nav-icon"><svg width="24" height="24"><use href="#i-star"/></svg></span>
+                    <span>Зал славы</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-item" href="#">
+                    <span class="nav-icon"><svg width="24" height="24"><use href="#i-doc"/></svg></span>
+                    <span>Новости</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-item" href="#">
+                    <span class="nav-icon"><svg width="24" height="24"><use href="#i-idea"/></svg></span>
+                    <span>Вопросы и ответы</span>
+                </a>
+            </li>
+        </ul>
 
         <div class="sidebar-social">
-            <a href="#">📱 Заходи в наш чат!</a>
-            <a href="#">📢 Заходи на наш канал!</a>
+            <a class="nav-item" href="#">
+                <span class="nav-icon"><svg width="24" height="24"><use href="#social-telegram"/></svg></span>
+                <span>Заходи в наш чат!</span>
+            </a>
+            <a class="nav-item" href="#">
+                <span class="nav-icon"><svg width="24" height="24"><use href="#social-telegram"/></svg></span>
+                <span>Заходи на наш канал!</span>
+            </a>
         </div>
     </aside>
 
-    <!-- Overlay -->
     <div class="overlay" id="overlay"></div>
 
-    <!-- Main Content -->
     <main>
-        <!-- Providers Section -->
-        <section class="providers">
-            <div class="provider-card">Evolution</div>
-            <div class="provider-card">PRAGMATIC PLAY</div>
-            <div class="provider-card">Ezugi</div>
-            <div class="provider-card">STREAK</div>
-            <div class="provider-card">NetEnt</div>
-        </section>
 
-        <!-- Promo Section -->
-        <section>
-            <div class="promo-header">
-                <h2>Акции и бонусы</h2>
-                <a href="#">Смотреть все →</a>
+      <div class="promo-banner">
+        <div class="promo-content">
+            <div class="promo-label">Приветственный Бонус</div>
+            <div class="promo-title">225% + 70 FS</div>
+            <div class="promo-subtitle">на первый депозит</div>
+            <button class="promo-btn">Регистрация</button>
+        </div>
+
+        <div class="promo-image">
+            <img src="img/banner-unreg-pers.png" alt="">
+        </div>
+
+        <div class="stats-panel">
+            <div class="stat-item">
+                <div class="stat-icon"><img src="img/icon-man-nout.png" alt=""></div>
+                <div class="stat-info">
+                    <div class="stat-label">Игроков онлайн</div>
+                    <div class="stat-value">1487</div>
+                </div>
             </div>
 
-            <div class="promo-grid">
-                <a href="#" class="promo-card">
-                    <div class="promo-image">€2,700</div>
-                    <div class="promo-content">
-                        <div class="promo-date">01.10.2025</div>
-                        <h3 class="promo-title">REEL WEDNESDAY от Endorphina</h3>
-                        <p class="promo-desc">Участвуйте в челленджах от Endorphina! Условия невозможно просты. Любой слот бренда принимает участие...</p>
-                    </div>
-                </a>
-
-                <a href="#" class="promo-card">
-                    <div class="promo-image">ПОДАРКИ</div>
-                    <div class="promo-content">
-                        <div class="promo-date">25.09.2025</div>
-                        <h3 class="promo-title">Только 24 часа – ПОДАРКИ для всех!</h3>
-                        <p class="promo-desc">Встречайте самый щедрый день месяца! В RIOBET подарок есть для каждого — от новичков до хроников...</p>
-                    </div>
-                </a>
-
-                <a href="#" class="promo-card">
-                    <div class="promo-image">€5,000</div>
-                    <div class="promo-content">
-                        <div class="promo-date">20.09.2025</div>
-                        <h3 class="promo-title">BIG WIN OF THE WEEK</h3>
-                        <p class="promo-desc">Еженедельный турнир с крупными призами для победителей! Покажи лучший выигрыш недели...</p>
-                    </div>
-                </a>
+            <div class="stat-item">
+                <div class="stat-icon"><img src="img/icon-clock.png" alt=""></div>
+                <div class="stat-info">
+                    <div class="stat-label">Среднее время выплаты</div>
+                    <div class="stat-value">136 мин 05 сек</div>
+                </div>
             </div>
-        </section>
+
+            <div class="stat-item">
+                <div class="stat-icon"><img src="img/icon-money-bag.png" alt=""></div>
+                <div class="stat-info">
+                    <div class="stat-label">Топ выигрыш за сегодня</div>
+                    <div class="stat-value">9 920 $</div>
+                </div>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-icon"><img src="img/icon-cup.png" alt=""></div>
+                <div class="stat-info">
+                    <div class="stat-label">Разыгрывается в турнирах</div>
+                    <div class="stat-value">29 765 947 $</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="games-section">
+            <!-- Header -->
+            <div class="games-header">
+                <div class="games-icon"><span><img src="img/icon-777.png" alt=""></span></div>
+                <h2 class="games-title">Топ игры</h2>
+                <a href="#" class="games-count">все 11000+</a>
+                <a href="#" class="games-provider">Провайдер</a>
+            </div>
+
+            <!-- Categories -->
+            <div class="games-categories">
+                <a href="#" class="category-btn active">Любая категория</a>
+                <a href="#" class="category-btn">Новые</a>
+                <a href="#" class="category-btn">Эксклюзивные</a>
+                <a href="#" class="category-btn">Перспекта</a>
+                <a href="#" class="category-btn">Популярные</a>
+                <a href="#" class="category-btn">Крещ Игры</a>
+                <a href="#" class="category-btn">Джекпоты</a>
+                <a href="#" class="category-btn">Низкие ставки</a>
+                <a href="#" class="category-btn">Отыгрывание бонуса</a>
+                <a href="#" class="category-btn">Брендированные игры</a>
+            </div>
+
+    <!-- Games Grid -->
+    <div class="games-grid">
+                <a href="#" class="game-card">
+                    <img src="img/games/luckystreak1000_icon.jpg" alt="Lucky Streak 1000">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <img src="img/games/BookofFlamesHoldWin_icon.jpg" alt="Book of Flames">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <span class="game-badge">NEW</span>
+                    <img src="img/games/jackowild-.jpg" alt="Jack O'Wild">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <img src="img/games/DiegosSpicyTruck-.jpg" alt="Diego Spicy">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <span class="game-badge">NEW</span>
+                    <img src="img/games/cleolegendsofegypt-.jpg" alt="Cleo Legend">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <img src="img/games/baconsbank_icon.jpg" alt="Bacon's Bank">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <img src="img/games/Hypernova_10K_Ways-icon.jpg" alt="Hypernova">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <img src="img/games/jackpotmines_icon.jpg" alt="Jackpot Mines">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <img src="img/games/moneyfest_icon.jpg" alt="MoneyFest">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <span class="game-jackpot">💎 13 284 535 ₸</span>
+                    <img src="img/games/egt_provide_40BurningHo_icon.jpg" alt="40 Burning Hot">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <span class="game-jackpot">💎 13 284 535 ₸</span>
+                    <img src="img/games/egt_provide_SupremeHot_icon.jpg" alt="Clover Lady">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <img src="img/games/egt_provide_20_bh_icon.jpg" alt="Frog Grog">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                            <a href="#" class="game-card">
+                    <img src="img/games/cashncrab_icon.jpg" alt="Frog Grog">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                            <a href="#" class="game-card">
+                    <img src="img/games/luckypiggies_icon.jpg" alt="Frog Grog">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                            <a href="#" class="game-card">
+                    <img src="img/games/olympigs_icon.jpg" alt="Frog Grog">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+    </div>
+    </div>
+
+    <div class="games-section">
+            <!-- Header -->
+            <div class="games-header">
+                <div class="games-icon"><span><img src="img/icon-woman.png" alt=""></span></div>
+                <h2 class="games-title">Игры месяца</h2>
+                <a href="#" class="games-provider">Все</a>
+            </div>
+
+    <!-- Games Grid -->
+    <div class="games-grid">
+                <a href="#" class="game-card">
+                    <img src="img/games/jackassgoldholdwinbuybonus_icon.jpg" alt="Lucky Streak 1000">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <img src="img/games/3x5holdthespin-.jpg" alt="Book of Flames">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <span class="game-badge">NEW</span>
+                    <img src="img/games/coinsofhalloweenholdwin-.jpg" alt="Jack O'Wild">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <img src="img/games/MysticPotTreasures-.jpg" alt="Diego Spicy">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <span class="game-badge">NEW</span>
+                    <img src="img/games/VelvetGems-.jpg" alt="Cleo Legend">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <img src="img/games/Valley-of-the-Gods_icon.jpg" alt="Bacon's Bank">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <img src="img/games/piggyriches3hogheaven-.jpg" alt="Hypernova">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <img src="img/games/playwiththedevilmegaways-.jpg" alt="Jackpot Mines">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <img src="img/games/maxmegaways3_icon.jpg" alt="MoneyFest">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="game-card">
+                    <span class="game-jackpot">💎 13 284 535 ₸</span>
+                    <img src="img/games/cash40_icon.jpg" alt="40 Burning Hot">
+                    <div class="game-overlay">
+                        <div class="game-actions">
+                            <span class="action-btn">♥</span>
+                            <span class="action-btn">ⓘ</span>
+                        </div>
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </a>
+
+    </div>
+    </div>
+
+
+
     </main>
 
-    <!-- Cookie Notice -->
     <div class="cookie-notice" id="cookieNotice">
         <div class="cookie-content">
             <div class="cookie-icon">🍪</div>
             <div class="cookie-text">
                 <p>Мы используем cookies в нашей работе. Пользуясь нашими услугами или нажимая кнопку Согласен, Вы даете согласие на использование cookie.</p>
-                <button onclick="document.getElementById('cookieNotice').style.display='none'">Согласен</button>
+                <button id="cookieBtn">Согласен</button>
             </div>
         </div>
     </div>
 
     <script src="script.js"></script>
 
-    <!-- SVG SPRITE (вставь один раз на страницу) -->
-<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-  <!-- home -->
-  <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-    <path stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-      d="M3 10.5 12 3l9 7.5v8a2 2 0 0 1-2 2h-4.5v-6h-5v6H5a2 2 0 0 1-2-2v-8z"/>
-  </symbol>
+    <!-- SVG SPRITES -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 10.5 12 3l9 7.5v8a2 2 0 0 1-2 2h-4.5v-6h-5v6H5a2 2 0 0 1-2-2v-8z"/>
+        </symbol>
 
-  <!-- sports ball -->
-  <symbol id="i-ball" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-    <circle cx="12" cy="12" r="9" stroke-width="1.8"/>
-    <circle cx="12" cy="7" r="1.4" stroke-width="1.6"/>
-    <circle cx="7.5" cy="12" r="1.4" stroke-width="1.6"/>
-    <circle cx="16.5" cy="12" r="1.4" stroke-width="1.6"/>
-    <circle cx="9.5" cy="16" r="1.4" stroke-width="1.6"/>
-    <circle cx="14.5" cy="16" r="1.4" stroke-width="1.6"/>
-  </symbol>
+        <symbol id="i-ball" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="12" cy="12" r="9" stroke-width="1.8"/>
+            <circle cx="12" cy="7" r="1.4" stroke-width="1.6"/>
+            <circle cx="7.5" cy="12" r="1.4" stroke-width="1.6"/>
+            <circle cx="16.5" cy="12" r="1.4" stroke-width="1.6"/>
+            <circle cx="9.5" cy="16" r="1.4" stroke-width="1.6"/>
+            <circle cx="14.5" cy="16" r="1.4" stroke-width="1.6"/>
+        </symbol>
 
-  <!-- gift -->
-  <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-    <rect x="3" y="10" width="18" height="10" rx="2" stroke-width="1.8"/>
-    <path d="M3 10h18M12 6v14" stroke-width="1.8" stroke-linecap="round"/>
-    <path d="M7.5 6c0 1.1.9 2 2 2h2-2c-1.1 0-2-.9-2-2s.9-2 2-2c2 0 2.5 2 2.5 2" stroke-width="1.8" stroke-linecap="round"/>
-    <path d="M16.5 6c0 1.1-.9 2-2 2h-2 2c1.1 0 2-.9 2-2s-.9-2-2-2c-2 0-2.5 2-2.5 2" stroke-width="1.8" stroke-linecap="round"/>
-  </symbol>
+        <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <rect x="3" y="10" width="18" height="10" rx="2" stroke-width="1.8"/>
+            <path d="M3 10h18M12 6v14" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M7.5 6c0 1.1.9 2 2 2h2-2c-1.1 0-2-.9-2-2s.9-2 2-2c2 0 2.5 2 2.5 2" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M16.5 6c0 1.1-.9 2-2 2h-2 2c1.1 0 2-.9 2-2s-.9-2-2-2c-2 0-2.5 2-2.5 2" stroke-width="1.8" stroke-linecap="round"/>
+        </symbol>
 
-  <!-- calendar -->
-  <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-    <rect x="3" y="5" width="18" height="16" rx="2" stroke-width="1.8"/>
-    <path d="M8 3v4M16 3v4M3 9h18" stroke-width="1.8" stroke-linecap="round"/>
-  </symbol>
+        <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <rect x="3" y="5" width="18" height="16" rx="2" stroke-width="1.8"/>
+            <path d="M8 3v4M16 3v4M3 10h18" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="8.5" cy="14.5" r="1"></circle>
+            <circle cx="12" cy="14.5" r="1"></circle>
+            <circle cx="15.5" cy="14.5" r="1"></circle>
+        </symbol>
 
-  <!-- location card -->
-  <symbol id="i-location-card" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-    <rect x="3" y="5" width="18" height="14" rx="2" stroke-width="1.8"/>
-    <path d="M14.5 12a2.5 2.5 0 1 0-5 0c0 1.94 2.5 4.5 2.5 4.5S14.5 13.94 14.5 12z" stroke-width="1.8" stroke-linejoin="round"/>
-  </symbol>
+        <symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M8 4h8v4a4 4 0 0 1-8 0V4z" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M6 6H4a3 3 0 0 0 3 3M18 6h2a3 3 0 0 1-3 3" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M12 12v3M9 20h6M10 15h4M9 20v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" stroke-width="1.8" stroke-linecap="round"/>
+        </symbol>
 
-  <!-- trophy -->
-  <symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-    <path d="M8 4h8v3a4 4 0 0 1-4 4 4 4 0 0 1-4-4V4z" stroke-width="1.8" stroke-linejoin="round"/>
-    <path d="M6 7H4a2 2 0 0 0 2 2M18 7h2a2 2 0 0 1-2 2" stroke-width="1.8" stroke-linecap="round"/>
-    <path d="M10 13v2a2 2 0 0 1-2 2h8a2 2 0 0 1-2-2v-2M8 19h8" stroke-width="1.8" stroke-linecap="round"/>
-  </symbol>
+        <symbol id="i-badge-dollar" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M12 3 4.8 7v10L12 21l7.2-4V7L12 3z" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M13.8 9.5a2 2 0 0 0-1.8-1.2c-1 0-1.8.7-1.8 1.6 0 2 3.6 1.2 3.6 3 0 .9-.8 1.6-1.8 1.6a2 2 0 0 1-1.8-1.2M12 7.8v8.4" stroke-width="1.6" stroke-linecap="round"/>
+        </symbol>
 
-  <!-- badge $ (hex) -->
-  <symbol id="i-badge-dollar" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-    <path d="M12 3 4.8 7v10L12 21l7.2-4V7L12 3z" stroke-width="1.8" stroke-linejoin="round"/>
-    <path d="M13.8 9.5a2 2 0 0 0-1.8-1.2c-1 0-1.8.7-1.8 1.6 0 2 3.6 1.2 3.6 3 0 .9-.8 1.6-1.8 1.6a2 2 0 0 1-1.8-1.2M12 7.8v8.4" stroke-width="1.6" stroke-linecap="round"/>
-  </symbol>
+        <symbol id="i-swords" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M4 4l6 6M3 7l7 7M6 3l7 7" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M20 4l-6 6M21 7l-7 7M18 3l-7 7" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M9 17l-2 2-2-2 2-2 2 2zm10 0l-2 2-2-2 2-2 2 2z" stroke-width="1.4" stroke-linejoin="round"/>
+        </symbol>
 
-  <!-- crossed swords -->
-  <symbol id="i-swords" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-    <path d="M4 4l6 6M3 7l7 7M6 3l7 7" stroke-width="1.8" stroke-linecap="round"/>
-    <path d="M20 4l-6 6M21 7l-7 7M18 3l-7 7" stroke-width="1.8" stroke-linecap="round"/>
-    <path d="M9 17l-2 2-2-2 2-2 2 2zm10 0l-2 2-2-2 2-2 2 2z" stroke-width="1.4" stroke-linejoin="round"/>
-  </symbol>
+        <symbol id="i-crown" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M3 9l4 3 5-6 5 6 4-3v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z" stroke-width="1.8" stroke-linejoin="round"/>
+        </symbol>
 
-  <!-- crown -->
-  <symbol id="i-crown" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-    <path d="M3 9l4 3 5-6 5 6 4-3v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z" stroke-width="1.8" stroke-linejoin="round"/>
-  </symbol>
+        <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M12 3l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 18l-5.9 3.1 1.2-6.5L2.6 9.9 9.1 9 12 3z" stroke-width="1.8" stroke-linejoin="round"/>
+        </symbol>
 
-  <!-- star -->
-  <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-    <path d="M12 3l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 18l-5.9 3.1 1.2-6.5L2.6 9.9 9.1 9 12 3z"
-          stroke-width="1.8" stroke-linejoin="round"/>
-  </symbol>
+        <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M7 3h7l4 4v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M14 3v5h5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 12h6M9 16h6" stroke-width="1.8" stroke-linecap="round"/>
+        </symbol>
 
-  <!-- document -->
-  <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-    <path d="M7 3h7l4 4v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" stroke-width="1.8" stroke-linejoin="round"/>
-    <path d="M14 3v5h5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M9 12h6M9 16h6" stroke-width="1.8" stroke-linecap="round"/>
-  </symbol>
+        <symbol id="i-idea" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M12 4a6 6 0 0 0-3.5 11c.5.4.9 1.1 1 1.8V18a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-1.2c.1-.7.5-1.4 1-1.8A6 6 0 0 0 12 4z" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M10 21h4" stroke-width="1.8" stroke-linecap="round"/>
+        </symbol>
 
-  <!-- idea (bulb) -->
-  <symbol id="i-idea" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-    <path d="M12 4a6 6 0 0 0-3.5 11c.5.4.9 1.1 1 1.8V18a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-1.2c.1-.7.5-1.4 1-1.8A6 6 0 0 0 12 4z" stroke-width="1.8" stroke-linejoin="round"/>
-    <path d="M10 21h4" stroke-width="1.8" stroke-linecap="round"/>
-  </symbol>
+        <symbol id="social-telegram" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22.17 2.37c.5-.2 1.02.25.88.77l-4.1 15.47c-.14.53-.74.77-1.2.48l-5.32-3.38a.75.75 0 0 1-.24-.24l-2.02-3.24a.25.25 0 0 1 .3-.36l3.56 1.15c.12.04.25 0 .33-.1l6.84-7.69c.2-.22-.06-.57-.34-.43L8.6 9.8a.74.74 0 0 1-.46.04L2.9 8.28c-.69-.2-.69-1.17 0-1.39L22.17 2.37Z"/>
+        </symbol>
 
-  <!-- telegram plane -->
-  <symbol id="i-telegram" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-    <path d="M21 3 3 11l6 2 2 6 3-4 4 3 3-15z" stroke-width="1.8" stroke-linejoin="round"/>
-  </symbol>
-</svg>
+        <symbol id="i-sport" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M9 5.5l3 2 3-2M6.5 9l2 3-2 3M17.5 9l-2 3 2 3M9 18.5l3-2 3 2M12 7.5l-2 3 2 2 2-2-2-3z"/>
+        </symbol>
 
+        <symbol id="i-slots" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="6" width="14" height="12" rx="2"></rect>
+            <path d="M7 9h3v4H7zM11 9h3v4h-3zM15 9h3v4h-3zM18 8V6m0 0h2a2 2 0 0 1 0 4h-2"/>
+            <path d="M6 18v2h10v-2"/>
+        </symbol>
+
+        <symbol id="i-live" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="7" y="5" width="10" height="14" rx="2"></rect>
+            <path d="M10.5 10.5l1.5-1.5 1.5 1.5-1.5 1.5-1.5-1.5zM9 16h6"/>
+            <circle cx="6" cy="8" r="2"></circle>
+        </symbol>
+
+        <symbol id="i-tournament" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 4h8v4a4 4 0 0 1-8 0V4z"/>
+            <path d="M6 6H4a3 3 0 0 0 3 3M18 6h2a3 3 0 0 1-3 3"/>
+            <path d="M12 12v3M9 20h6M10 15h4M9 20v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/>
+        </symbol>
+
+        <symbol id="i-bonus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="8"></circle>
+            <path d="M10 9.5a2 2 0 0 1 2-1.5c1.1 0 2 .6 2 1.6 0 1.2-1.2 1.6-2.5 2-1.3.4-2.5.8-2.5 2 0 1 .9 1.6 2 1.6a2.3 2.3 0 0 0 2-1M12 7.5v9"/>
+        </symbol>
+
+        <symbol id="i-loyalty" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3.5 10l3.5 3 3-5 3 5 3.5-3 4 2.5V18a2 2 0 0 1-2 2H5.5a2 2 0 0 1-2-2v-5.5z"/>
+            <path d="M5 18h14"/>
+        </symbol>
+
+        <symbol id="i-hall" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3.5l2.8 5.6 6.2.9-4.5 4.4 1.1 6.1L12 17.7 6.4 20.5l1.1-6.1-4.5-4.4 6.2-.9L12 3.5z"/>
+        </symbol>
+    </svg>
 </body>
 </html>
