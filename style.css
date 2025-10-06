@@ -381,54 +381,7 @@ main {
     color: #9ca3af;
 }
 
-/* Cookie Notice */
-.cookie-notice {
-    position: fixed;
-    bottom: 1rem;
-    left: 1rem;
-    right: 1rem;
-    max-width: 400px;
-    background-color: #1f2937;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    z-index: 30;
-}
 
-.cookie-content {
-    display: flex;
-    gap: 1rem;
-}
-
-.cookie-icon {
-    font-size: 2.5rem;
-}
-
-.cookie-text {
-    flex: 1;
-}
-
-.cookie-text p {
-    font-size: 0.875rem;
-    margin-bottom: 0.75rem;
-    line-height: 1.5;
-}
-
-.cookie-text button {
-    width: 100%;
-    padding: 0.5rem;
-    background-color: #16a34a;
-    color: #fff;
-    border: none;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.cookie-text button:hover {
-    background-color: #15803d;
-}
 
 /* Media Queries */
 @media (max-width: 768px) {

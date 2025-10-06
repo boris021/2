@@ -31,18 +31,6 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-// Закрытие cookie уведомления
-if (cookieBtn) {
-    cookieBtn.addEventListener('click', function() {
-        cookieNotice.style.display = 'none';
-        localStorage.setItem('cookieAccepted', 'true');
-    });
-}
-
-// Проверяем, было ли принято cookie уведомление
-if (localStorage.getItem('cookieAccepted') === 'true') {
-    cookieNotice.style.display = 'none';
-}
 
 // Плавная прокрутка для якорных ссылок
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
