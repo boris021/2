@@ -1001,3 +1001,443 @@ main {
     /* существующие стили */
     text-decoration: none;
 }
+
+.how-to-play-section {
+    background: linear-gradient(180deg, #0f2e21 0%, #1a3d2e 100%);
+    padding: 60px 20px;
+	 margin-top: 40px;
+	     padding: 24px 24px;
+    z-index: 1;
+    border-radius: 16px;
+}
+
+.how-to-play-container {
+    max-width: 1480px;
+    margin: 0 auto;
+}
+.how-to-play-container h1 {
+	margin-bottom: 20px;
+	font-size: 40px;
+}
+.how-to-play-container p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.4;
+}
+.how-to-play-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 45px;
+    padding-left: 10px;
+}
+
+.how-to-play-emoji {
+    font-size: 36px;
+    line-height: 1;
+}
+
+.how-to-play-title {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+.how-to-play-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.play-step-card {
+    background: linear-gradient(145deg, rgba(26, 61, 46, 0.8) 0%, rgba(15, 46, 33, 0.9) 100%);
+    border-radius: 20px;
+    padding: 30px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.play-step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.play-step-number {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    font-size: 52px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.08);
+    line-height: 1;
+}
+
+.play-step-arrow {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.play-icon-container {
+    width: 180px;
+    height: 180px;
+    margin: 20px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.play-icon-bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.play-icon-container img {
+	width: 100%;
+	object-fit: contain;
+}
+.play-icon-1 {
+    background: linear-gradient(135deg, #6b5dd8 0%, #9d4edd 100%);
+    box-shadow: 0 15px 35px rgba(107, 93, 216, 0.35);
+}
+
+.play-icon-1::before {
+    content: '✓';
+    font-size: 90px;
+    color: #4ade80;
+    font-weight: 700;
+}
+
+.play-icon-2 {
+    background: linear-gradient(135deg, #2d5a3f 0%, #1e3a2a 100%);
+    box-shadow: 0 15px 35px rgba(45, 90, 63, 0.4);
+}
+
+.play-icon-2::before {
+    content: '🪙';
+    font-size: 80px;
+}
+
+.play-icon-3 {
+    background: linear-gradient(135deg, #3a2d28 0%, #2a1f1b 100%);
+    box-shadow: 0 15px 35px rgba(58, 45, 40, 0.4);
+}
+
+.play-icon-3::before {
+    content: '🍓';
+    font-size: 80px;
+}
+
+.play-icon-4 {
+    background: linear-gradient(135deg, #2d3d52 0%, #1e2836 100%);
+    box-shadow: 0 15px 35px rgba(45, 61, 82, 0.4);
+}
+
+.play-icon-4::before {
+    content: '🏆';
+    font-size: 80px;
+}
+
+.play-icon-5 {
+    background: linear-gradient(135deg, #2d524a 0%, #1e3630 100%);
+    box-shadow: 0 15px 35px rgba(45, 82, 74, 0.4);
+}
+
+.play-icon-5::before {
+    content: '⏱️';
+    font-size: 80px;
+}
+
+.play-step-title {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 22px;
+    line-height: 1.4;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-step-card:nth-child(1) .play-step-title {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.play-step-card:not(:nth-child(1)) .play-step-title {
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 500;
+}
+
+.play-step-button {
+    width: 100%;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+.play-step-button a {
+	color: #fff;;
+}
+.play-step-card:nth-child(1) .play-step-button {
+    background: #4ade80;
+    color: #0d1f18;
+}
+
+.play-step-card:nth-child(1) .play-step-button:hover {
+    background: #22c55e;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(74, 222, 128, 0.4);
+}
+
+.play-step-card:not(:nth-child(1)) .play-step-button {
+    background: rgba(74, 222, 128, 0.15);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.play-step-card:not(:nth-child(1)) .play-step-button:hover {
+    background: rgba(74, 222, 128, 0.25);
+}
+
+/* Планшеты */
+@media (max-width: 1200px) {
+    .how-to-play-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .how-to-play-title {
+        font-size: 32px;
+    }
+}
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+    .how-to-play-section {
+        padding: 40px 15px;
+    }
+
+    .how-to-play-header {
+        margin-bottom: 30px;
+    }
+
+    .how-to-play-emoji {
+        font-size: 32px;
+    }
+
+    .how-to-play-title {
+        font-size: 24px;
+    }
+
+    .how-to-play-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .play-step-card {
+        padding: 25px 20px;
+    }
+
+    .play-icon-container {
+        width: 140px;
+        height: 140px;
+        margin: 15px 0 25px;
+    }
+
+    .play-icon-bg::before {
+        font-size: 60px !important;
+    }
+
+    .play-step-number {
+        font-size: 42px;
+        top: 15px;
+        right: 18px;
+    }
+
+    .play-step-arrow {
+        display: none;
+    }
+
+    .play-step-title {
+        font-size: 15px;
+        min-height: auto;
+        margin-bottom: 18px;
+    }
+
+    .play-step-button {
+        padding: 13px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Маленькие экраны */
+@media (max-width: 480px) {
+    .how-to-play-title {
+        font-size: 20px;
+    }
+
+    .play-icon-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .play-icon-bg::before {
+        font-size: 50px !important;
+    }
+}
+
+
+/* Фиксированная правая панель */
+.right-panel-fixed {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    background: rgba(15, 35, 28, 0.95);
+    border-radius: 16px 0 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    gap: 12px;
+    z-index: 1000;
+    box-shadow: -2px 0 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: none;
+}
+
+.right-panel-item {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    background: transparent;
+    border: none;
+}
+
+.right-panel-item svg {
+    width: 24px;
+    height: 24px;
+    stroke: rgba(255, 255, 255, 0.4);
+    fill: none;
+    stroke-width: 2;
+    transition: all 0.3s ease;
+}
+
+.right-panel-item:hover {
+    background: rgba(74, 222, 128, 0.15);
+}
+
+.right-panel-item:hover svg {
+    stroke: #4ade80;
+    transform: scale(1.15);
+}
+
+/* Тултип слева */
+.right-panel-item::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    right: 60px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.right-panel-item:hover::before {
+    opacity: 1;
+}
+
+/* Стрелка тултипа */
+.right-panel-item::after {
+    content: '';
+    position: absolute;
+    right: 52px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid rgba(0, 0, 0, 0.9);
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.right-panel-item:hover::after {
+    opacity: 1;
+}
+
+/* Активная иконка */
+.right-panel-item.active {
+    background: rgba(74, 222, 128, 0.2);
+}
+
+.right-panel-item.active svg {
+    stroke: #4ade80;
+}
+
+/* Разделитель */
+.right-panel-divider {
+    width: 30px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 4px 0;
+}
+
+/* Счетчик/бейдж */
+.right-panel-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #ef4444;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 5px;
+    border-radius: 10px;
+    min-width: 18px;
+    text-align: center;
+}
+
+/* Иконка сердца с заливкой */
+.right-panel-item.heart-icon svg {
+    fill: none;
+}
+
+.right-panel-item.heart-icon.active svg,
+.right-panel-item.heart-icon:hover svg {
+    fill: #4ade80;
+    stroke: #4ade80;
+}
+
